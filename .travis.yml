@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: e9d4Ml1O7K4ClK8EV56BZSNgsFlrk5qWCseViAwM/pXNm107OfmAGz2AIjIqvHxLPLd4YOKTEwmBqBBP8yd/IFMbadQ9hFlxiEdgngXIUQtomyPJadVOeOzWvmnjOtqPnR0fp3gCK3n6++Wy5Q3xnXlEcb20DnOQeW/nN96jitSG6kPyWiPwWERa5PB2/2CRiYY+XiXpL5ib/XfeBqWfeCb9fQw/IeeYbY4+vSJwxAJWVhX/cvoDcKHQUMCBPe/O1fJ8hA4A38Tb0LgLDPNZgY7Yanq76zi7QPO97x00CRSWS8aB+qr/1ZJVjCBqhpZY8+A8p7q88bCIhLLMcTu+h91wG2xN7YIv048bP4izRqZpljwMHQgmRmjsDtqGXE+XgsTDmvwVPECnZy+YH6J66I4l4Qf38se56QpVP0ywsN8IzPVLIolmADib+k9T+fH3xbNUNV0VoJcHPAj2zIUwyBubp4fSR1m/nJFTceGnw0VjimIkehHdLcD5mYAprt1YUAB51S19jVggejYJLYVVzF3DmQ1neDURRNP4lOAPp6rNKL1c8wy6yXyqZDPXsp3petEX+bLkYfU1jiFvjTOHrKHZ9HsMB98UwHbFwE2eoNbnKg5vx5reUf8zk/I20LmDXH0ay7ibuEXxzMxDuvFVn2RRLce2Fyzlxv+j1RSN7ig=
+  app: node-restaurants-app-mongoose-integration-testing
+  on:
+    repo: kelseybutler9/node-restaurants-app-mongoose-integration-testing
+    branch: feature/with-tests
